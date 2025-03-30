@@ -95,7 +95,7 @@ body{
     background: linear-gradient(90deg,rgb(248, 168, 255),rgb(255, 163, 186));
 }
 p{
-    font-size: clamp(0.5rem, 2vw, 1.5rem);
+    font-size: clamp(0.8rem, 2vw, 1.5rem);
     width: 80%;
     margin-top: 2%;
     margin-left: 10%;
@@ -133,7 +133,10 @@ h1{
     margin-inline: auto;
 }
 ul{
-    margin: 0;
+    padding-left: 1rem;
+}
+ol{
+   margin-inline: 10%;
 }
 li{
     font-size: clamp(1rem, 3vw, 2rem);
@@ -147,4 +150,11 @@ li{
     font-weight: 500;
     text-shadow: rgb(255, 0, 0) 0 0 15px;
     font-size: clamp(1.3rem, 5vw, 5rem);
+}
+@media (max-width: 600px) {
+    .enabled:hover,
+    .enabled:focus {
+    color: black;
+    background-color: #ffffff00;
+}
 }
