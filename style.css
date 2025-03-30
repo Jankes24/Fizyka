@@ -94,6 +94,12 @@ body{
     left: 700vw;
     background: linear-gradient(90deg,rgb(248, 168, 255),rgb(255, 163, 186));
 }
+p{
+    font-size: clamp(0.5rem, 2vw, 1.5rem);
+    width: 80%;
+    margin-top: 2%;
+    margin-left: 10%;
+}
 #index{
     display: flex;
     font-size: clamp(2rem, 4vw, 4rem); 
@@ -116,10 +122,24 @@ body{
     border-radius: 5px;
 }
 h1{
-    margin: auto;
-    text-align:center;
+    font-size: clamp(1.3rem, 4vw, 3rem);
+}
+.endHeader{
+    margin-top: 5%;
+}
+#creditScrean{
+    width: fit-content;
+    margin-top: 3%;
+    margin-inline: auto;
+}
+ul{
+    margin: 0;
+}
+li{
+    font-size: clamp(1rem, 3vw, 2rem);
 }
 #mainHeader{
+    margin: auto;
     width: 95%;
     user-select: none;
     height: auto;
