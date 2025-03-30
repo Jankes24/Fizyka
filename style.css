@@ -6,6 +6,7 @@ html{
     box-sizing: border-box;
 }
 body{
+    background: linear-gradient(90deg,rgb(255, 191, 191) 50%,rgb(255, 163, 186) 51%);
     font-family: "Winky Sans",Arial, sans-serif;
     z-index: 10;
 }
@@ -52,7 +53,7 @@ body{
     width: 100vw;
     height: 100vh;
     z-index: 1;
-    transition: transform 500ms cubic-bezier(0,.79,.34,.31);
+    transition: transform 800ms cubic-bezier(0,.72,.31,1.25);
     pointer-events: none;
     display: flex;
     flex-flow: column;
@@ -63,35 +64,35 @@ body{
 #slide-0{
     justify-content: center;
     align-items: center;
-    background-color: rgb(255, 191, 191);
+    background: linear-gradient(90deg,rgba(255, 191, 191),rgb(255, 205, 164));
 }
 #slide-1{
     left: 100vw;
-    background-color: rgb(255, 205, 164);
+    background: linear-gradient(90deg,rgb(255, 205, 164),rgb(255, 249, 159));
 }
 #slide-2{
     left: 200vw;
-    background-color: rgb(255, 249, 159);
+    background: linear-gradient(90deg,rgb(255, 249, 159),rgb(214, 255, 160));
 }
 #slide-3{
     left: 300vw;
-    background-color: rgb(214, 255, 160);
+    background: linear-gradient(90deg,rgb(214, 255, 160),rgb(193, 255, 180));
 }
 #slide-4{
     left: 400vw;
-    background-color: rgb(193, 255, 180);
+    background: linear-gradient(90deg,rgb(193, 255, 180),rgb(160, 241, 255));
 }
 #slide-5{
     left: 500vw;
-    background-color: rgb(160, 241, 255);
+    background: linear-gradient(90deg,rgb(160, 241, 255),rgb(158, 203, 255));
 }
 #slide-6{
     left: 600vw;
-    background-color: rgb(158, 203, 255);
+    background: linear-gradient(90deg,rgb(158, 203, 255),rgb(248, 168, 255));
 }
 #slide-7{
     left: 700vw;
-    background-color: rgb(216, 157, 255);
+    background: linear-gradient(90deg,rgb(248, 168, 255),rgb(255, 163, 186));
 }
 #index{
     display: flex;
