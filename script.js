@@ -6,20 +6,16 @@ const indexHolder = document.getElementById("index");
 window.onload = function() {
     if (currentIndex === slides.length - 1)
         {
-            arrows[1].innerHTML = "";
             arrows[1].classList.remove("enabled");
         }
         else{
-            arrows[1].innerHTML = "&#129138;";
             arrows[1].classList.add("enabled");
         }
         if (currentIndex === 0)
         {
-            arrows[0].innerHTML = "";
             arrows[0].classList.remove("enabled");
         }
         else{
-            arrows[0].innerHTML = "&#129136;";
             arrows[0].classList.add("enabled");
         }
         indexHolder.innerHTML = (currentIndex + 1).toString() + "/" + slides.length;       
@@ -39,23 +35,19 @@ function MoveSlides(dir)
     });
     if (currentIndex === slides.length - 1)
     {
-        arrows[1].innerHTML = "✖";
         arrows[1].classList.add("disabled");
         arrows[1].classList.remove("enabled");
     }
     else{
-        arrows[1].innerHTML = "&#129138;";
         arrows[1].classList.remove("disabled");
         arrows[1].classList.add("enabled");
     }
     if (currentIndex === 0)
         {
-            arrows[0].innerHTML = "✖";
             arrows[0].classList.add("disabled");
             arrows[0].classList.remove("enabled");
         }
         else{
-        arrows[0].innerHTML = "&#129136;";
         arrows[0].classList.remove("disabled");
         arrows[0].classList.add("enabled");
     }

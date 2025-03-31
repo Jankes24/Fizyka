@@ -23,29 +23,46 @@ body{
 }
 .arrow{
     user-select: none;
-    min-height: fit-content;
-    min-width: fit-content;
     text-align: center;
-    width: 8vmin;
-    height: 8vmin;
-    border-radius: 3px;
-    transition: 300ms ease-in;
+    width: 9vmin;
+    height: 9vmin;
+    border-radius: 50%;
+    transition: 200ms ease-in;
+    background-size: cover;
+}
+#left{
+    scale: -1;
+}
+#left.disabled{
+    scale: 0;
+}
+#right{
+    scale: 1;
+}
+#right.disabled{
+    scale: 0;
+}
+.enabled {
+    background-color: #d3d3d300;
+    transition: scale 400ms, background-color 400ms, box-shadow 400ms;
+    background-image: url("src/arrow.png");
 }
 .enabled:hover,
 .enabled:focus {
+    box-shadow: 0px 0px 40px 10px rgb(255, 255, 255);
     cursor: pointer;
-    color: wheat;
-    background-color: #222222da;
+    background-color: #fffcd0;
     outline: none;
-    transition: 160ms ease-in;
-    scale: .95;
 }
 .disabled{
     background-color: #00000000;
-    transition: 600ms cubic-bezier(.17,.02,1,.08);
+    background-image: url("src/X.png");
+    transition: scale 700ms cubic-bezier(.84,0,.32,-0.67), 
+    background-color 500ms cubic-bezier(.84,0,.32,-0.67),
+    box-shadow 500ms cubic-bezier(.84,0,.32,-0.67);
     border-radius: 100%;
-    scale: 0;
 }
+
 .slide{
     position: fixed;
     left: 0;
@@ -114,11 +131,11 @@ p{
     justify-self: center;
     align-self: center;
     position: relative;
-    font-size: clamp(1rem, 2vw, 2rem); 
+    font-size: clamp(1rem, 3vw, 3.2rem); 
     padding-inline: 1rem;
     top: 1vmin;
     min-width: fit-content;
-    border: 1px solid;
+    border: 4px solid;
     border-radius: 5px;
 }
 h1{
@@ -142,19 +159,24 @@ li{
     font-size: clamp(1rem, 3vw, 2rem);
 }
 #mainHeader{
-    margin: auto;
     text-align: center;
     width: 95%;
+    margin: auto;
+    margin-bottom: 50vh;
     user-select: none;
     height: auto;
     font-weight: 500;
-    text-shadow: rgb(255, 0, 0) 0 0 15px;
+    text-shadow: rgb(255, 121, 121) 0 0 15px;
     font-size: clamp(1.3rem, 5vw, 5rem);
 }
 @media (max-width: 600px) {
     .enabled:hover,
     .enabled:focus {
-    color: black;
-    background-color: #ffffff00;
-}
+        box-shadow: 0px 0px 0px 0px rgb(255, 255, 255);
+        background-color: #fffcd000;
+    }
+    .arrow{
+        width: 12vmin;
+        height: 12vmin;
+    }
 }
