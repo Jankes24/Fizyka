@@ -11,92 +11,339 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="navigation">
-        <div class="arrow" id="left" onclick="MoveSlides(-1)"></div>
-        <div id="index">0</div>
-        <div class="arrow" id="right" onclick="MoveSlides(1)"></div>
-    </div>
-    <div id="slides">
-        <div class="slide" id="slide-0">
-            <div class="title">Strona Główna</div>
-            <h1 id="mainHeader">Bezpieczeństwo domowej sieci elektrycznej</h1>
+    <header>
+        <div class="container">
+            <h1>Bezpieczeństwo Domowej Sieci Elektrycznej</h1>
+            <p>Poznaj zasady bezpiecznego korzystania z elektryczności w domu</p>
         </div>
-        <div class="slide" id="slide-1">
-            <div class="title">Zabezpieczenia sieci elektrycznej</div>
-            <h2>Domowa sieć elektryczna wymaga odpowiednich zabezpieczeń, które chronią przed uszkodzeniem i zapewniają bezpieczeństwo użytkowania. Dwa najważniejsze rodzaje zabezpieczeń to:</h2>
-            <ul id="ul1">
-                <li><b>Zabezpieczenia przeciwzwarciowe:</b></li>
-                <p id="p1">Zabezpieczenie to ma na celu przerwanie obwodu w przypadku zwarcia w instalacji elektrycznej. Zwarcie powoduje przepływ zbyt dużego prądu, który może doprowadzić do uszkodzenia przewodów lub wybuchu pożaru. Najczęściej stosowane są bezpieczniki lub wyłączniki nadmiarowoprądowe, które automatycznie odcinają zasilanie, gdy wartość prądu przekroczy bezpieczny limit.</p>
-                <li><b>Zabezpieczenia przeciwprzeciążeniowe:</b></li>
-                <p id="p1">Przeciążenie występuje, gdy w instalacji jest zbyt duża liczba urządzeń lub urządzenie pobiera zbyt duży prąd, co może prowadzić do przegrzania przewodów i pożaru. Wyłączniki nadmiarowoprądowe lub bezpieczniki automatyczne reagują w przypadku zbyt dużego przepływu prądu, odcinając zasilanie przed powstaniem uszkodzenia.</p>
-            </ul>
-        </div>
-        <div class="slide" id="slide-2">
-            <div class="title">Zabazpieczenia urządzeń podłączonych do sieci</div>
-            <h2>Urządzenia elektryczne podłączone do sieci często mają wbudowane zabezpieczenia, aby chronić użytkowników przed potencjalnymi zagrożeniami. Oto kilka przykładów:</h2>
-            <ul id="ul1">
-                <li><b>Bezpieczniki:</b> Wiele urządzeń, takich jak kuchenki elektryczne, pralki czy komputery, zawiera wewnętrzne bezpieczniki. W przypadku przepięcia lub zwarcia, bezpiecznik automatycznie odcina dopływ prądu, zapobiegając uszkodzeniu urządzenia.</li>
-                <li><b>Uziemienie:</b> Urządzenia wyposażone w wtyczkę z trzema bolcami posiadają mechanizm uziemienia, który zapobiega porażeniu prądem w razie awarii wewnętrznej.</li>
-                <li><b>Wyłączniki różnicowoprądowe (RCD):</b> Są to urządzenia zabezpieczające przed porażeniem prądem, które wykrywają różnicę między prądem wpływającym i wypływającym z urządzenia. Jeśli wystąpi nieprawidłowość, RCD natychmiast odcina zasilanie.</li>
-            </ul>
-        </div>
-        <div class="slide" id="slide-3">
-            <div class="title">Zagrożenie sieci elektrycznej</div>
-            <h2><b>Zagrożenie sieć elektryczna dla zdrowia:</b></h2>
-            <ul id="ul1">
-                <li><b>Porażenie prądem: </b>Zdarza się, że człowiek może wejść w kontakt z przewodem pod napięciem. Prąd elektryczny może powodować poważne uszkodzenia ciała, w tym oparzenia, uszkodzenia tkanek mięśniowych i nerwowych, a także zatrzymanie pracy serca.</li>
-                <li><b>Pożar:</b> Uszkodzenie instalacji elektrycznej lub przeciążenie sieci może prowadzić do iskrzenia i zapalenia materiałów palnych w pobliżu przewodów.</li>
-            </ul>
-            <h2><b>W sieci elektrycznej stosuje się różne zabezpieczenia przeciwporażeniowe, takie jak:</b></h2>
-            <ul id="ul1">
-                <li><b>Wyłączniki różnicowoprądowe (RCD): </b>Te urządzenia wykrywają różnicę w prądzie i natychmiast odcinają zasilanie w przypadku wykrycia niebezpiecznego wycieku prądu, co skutecznie chroni przed porażeniem.</li>
-                <li><b>Izolacja przewodów: </b>Każdy przewód elektryczny w instalacji powinien być odpowiednio izolowany, aby zapobiec przypadkowemu dotknięciu go przez osoby lub przedmioty.</li>
-                <li><b>Uziemienie: </b>Jest to kluczowy element ochrony przed porażeniem. W przypadku awarii, np. uszkodzenia izolacji, prąd przepływa do ziemi, zamiast przez ciało człowieka.</li>
-            </ul>
-        </div>
-        <div class="slide" id="slide-4">
-            <div class="title">Skutki porażenia prądem elektrycznym</div>
-            <h2><b>Porażenie prądem elektrycznym może prowadzić do różnych skutków zdrowotnych, w zależności od siły prądu i czasu jego działania. Oto najczęstsze objawy:</b></h2>
-            <ul id="ul1">
-                <li><b>Oparzenia: </b>Kontakt z przewodem elektrycznym może powodować oparzenia skóry i tkanek wewnętrznych.</li>
-                <li><b>Zatrzymanie akcji serca: </b>Prąd elektryczny, zwłaszcza o dużym natężeniu, może powodować migotanie serca lub zatrzymanie krążenia.</li>
-                <li><b>Uszkodzenie układu nerwowego: </b>Prąd może uszkodzić nerwy, prowadząc do paraliżu lub utraty czucia.</li>
-                <li><b>Uszkodzenia mięśni i tkanek: </b>Prąd elektryczny może powodować skurcze mięśni i uszkodzenia mięśni szkieletowych.</li>
-            </ul>
-        </div>
-        <div class="slide" id="slide-5">
-            <div class="title">Zasady udzielania pierwszej pomocy</div>
-            <h2><b>W przypadku porażenia prądem elektrycznym należy niezwłocznie podjąć działania ratunkowe:</b></h2>
-            <ol>
-                <li><b>Odłącz zasilanie:</b> Przede wszystkim należy natychmiast odciąć dopływ prądu, np. poprzez wyłączenie bezpieczników lub wyjęcie wtyczki z gniazdka.</li>
-                <li><b>Wezwij pomoc:</b> Skontaktuj się z pogotowiem ratunkowym, dzwoniąc na numer alarmowy 112.</li>
-                <b><li>Sprawdzenie stanu poszkodowanego:</b> Jeśli osoba jest nieprzytomna, sprawdź, czy oddycha. Jeśli nie ma oddechu, rozpocznij resuscytację krążeniowo-oddechową (RKO), a jeśli serce nie bije, wykonuj uciski klatki piersiowej.</li>
-                <b><li>Unikaj kontaktu z poszkodowanym:</b> Jeśli nie możesz odłączyć źródła prądu, użyj materiałów izolujących (np. drewna lub suchego kawałka materiału), aby oddzielić osobę od źródła prądu.</li>
-                <b><li>Obserwuj poszkodowanego:</b> Nawet jeśli osoba odzyskała przytomność, należy ją niezwłocznie przetransportować do szpitala, ponieważ skutki porażenia mogą pojawić się dopiero po pewnym czasie.</li>
-            </ol>
-        </div>
-        <div class="slide" id="slide-6">
-            <div class="title">Podsumowanie</div>
-            <h2>Bezpieczeństwo domowej sieci elektrycznej jest kluczowe, aby zapewnić ochronę przed uszkodzeniami sprzętu oraz zagrożeniami dla zdrowia i życia. Odpowiednie zabezpieczenia, takie jak wyłączniki nadmiarowoprądowe, bezpieczniki, RCD oraz prawidłowa instalacja elektryczna, są fundamentem zapewnienia bezpieczeństwa. Warto również znać zasady udzielania pierwszej pomocy w razie porażenia prądem, aby szybko i skutecznie zareagować w sytuacjach awaryjnych.</h2>
-        </div>
-        <div class="slide" id="slide-7">
-            <div class="title">Koniec</div>
-            <div id="creditScrean">
-                <h1 class="endHeader">Patryk Jankowiak:</h1>
-                <ul>
-                    <li>Zrobił wszystko</li>
-                </ul>
-                <h1 class="endHeader">Dawid Ślęzak:</h1>
-                <ul>
-                    <li>Nie zrobił wszystko</li>
-                </ul>
-                <h1 class="endHeader">Filip Niedzielski:</h1>
-                <ul>
-                  <li>Zrobił notatki z biologii</li>
-                 </ul>
+    </header>
+    <main class="container">
+        <div class="tab-container">
+            <div class="tabs">
+                <button class="tab active" onclick="OpenTab(event, 'zabezpieczenia')">Zabezpieczenia sieci</button>
+                <button class="tab" onclick="OpenTab(event, 'urzadzenia')">Urządzenia domowe</button>
+                <button class="tab" onclick="OpenTab(event, 'zagrozenia')">Zagrożenia dla człowieka</button>
+                <button class="tab" onclick="OpenTab(event, 'pierwsza-pomoc')">Pierwsza pomoc</button>
+            </div>
+            
+            <div id="zabezpieczenia" class="tab-content active">
+                <h2>Zabezpieczenia sieci elektrycznej</h2>
+                
+                <div class="info-box">
+                    <p>Instalacja elektryczna musi być odpowiednio zabezpieczona przed skutkami zwarć i przeciążeń, aby zapobiec uszkodzeniu urządzeń i instalacji oraz zapewnić bezpieczeństwo użytkowników.</p>
+                </div>
+                
+                <h3>Główne rodzaje zabezpieczeń:</h3>
+                
+                <div class="flex-container">
+                    <div class="flex-item card">
+                        <h4>Zabezpieczenia przeciwzwarciowe</h4>
+                        <p>Chronią instalację przed skutkami zwarć, które mogą powodować przepływ bardzo dużych prądów i prowadzić do pożaru.</p>
+                        <ul>
+                            <li>Bezpieczniki topikowe</li>
+                            <li>Wyłączniki nadprądowe (bezpieczniki automatyczne)</li>
+                            <li>Wyłączniki kompaktowe</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="flex-item card">
+                        <h4>Zabezpieczenia przeciążeniowe</h4>
+                        <p>Chronią przewody i urządzenia przed nadmiernym obciążeniem prądowym, które może prowadzić do przegrzania i uszkodzenia izolacji.</p>
+                        <ul>
+                            <li>Wyłączniki instalacyjne (nadprądowe)</li>
+                            <li>Bezpieczniki topikowe</li>
+                            <li>Wyłączniki silnikowe</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <h3>Jak działają zabezpieczenia?</h3>
+                
+                <button class="accordion">Bezpieczniki topikowe</button>
+                <div class="panel">
+                    <div class="panel-content">
+                        <p>Działają na zasadzie przepalenia się drutu topikowego pod wpływem przepływu prądu o zbyt dużym natężeniu. Po zadziałaniu wymagają wymiany wkładki topikowej.</p>
+                        <ul>
+                            <li>Zalety: niski koszt, duża niezawodność</li>
+                            <li>Wady: jednorazowość, konieczność posiadania zapasów</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <button class="accordion">Wyłączniki nadprądowe (automatyczne)</button>
+                <div class="panel">
+                    <div class="panel-content">
+                        <p>Działają na zasadzie bimetalicznego wyzwalacza termicznego (przeciążenia) oraz elektromagnetycznego (zwarcia). Po zadziałaniu można je ponownie włączyć bez wymiany elementów.</p>
+                        <ul>
+                            <li>Zalety: wielokrotne użycie, łatwe resetowanie</li>
+                            <li>Wady: wyższy koszt niż bezpieczniki topikowe</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <button class="accordion">Bezpieczniki różnicowoprądowe (RCD)</button>
+                <div class="panel">
+                    <div class="panel-content">
+                        <p>Wykrywają różnicę między prądem wpływającym i wypływającym z obwodu. Jeśli różnica przekracza wartość progową (zwykle 30mA), wyłącznik odcina zasilanie.</p>
+                        <ul>
+                            <li>Chroni przed porażeniem prądem</li>
+                            <li>Reaguje na upływy prądu do ziemi</li>
+                            <li>Kluczowy element ochrony przeciwporażeniowej</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="urzadzenia" class="tab-content">
+                <h2>Zabezpieczenia urządzeń domowych</h2>
+                
+                <div class="info-box">
+                    <p>Urządzenia użytku domowego również posiadają własne zabezpieczenia, które chronią zarówno samo urządzenie, jak i użytkownika przed potencjalnymi zagrożeniami.</p>
+                </div>
+                
+                <h3>Typowe zabezpieczenia w urządzeniach:</h3>
+                
+                <div class="flex-container">
+                    <div class="flex-item card">
+                        <h4>Bezpieczniki termiczne</h4>
+                        <p>Chronią urządzenie przed przegrzaniem i pożarem. Występują m.in. w czajnikach, suszarkach, żelazkach.</p>
+                        <p>Działanie: Przerywają obwód, gdy temperatura przekroczy bezpieczną wartość.</p>
+                    </div>
+                    
+                    <div class="flex-item card">
+                        <h4>Wyłączniki przeciążeniowe</h4>
+                        <p>Chronią silniki elektryczne przed uszkodzeniem przy nadmiernym obciążeniu.</p>
+                        <p>Występują w: pralkach, zmywarkach, lodówkach, odkurzaczach.</p>
+                    </div>
+                    
+                    <div class="flex-item card">
+                        <h4>Izolacja ochronna</h4>
+                        <p>Urządzenia klasy II posiadają podwójną izolację, która eliminuje potrzebę uziemienia.</p>
+                        <p>Oznaczenie: symbol dwóch kwadratów jeden w drugim.</p>
+                    </div>
+                </div>
+                
+                <h3>Szczegółowe zabezpieczenia według typów urządzeń:</h3>
+                
+                <button class="accordion">Sprzęt AGD (pralki, zmywarki, lodówki)</button>
+                <div class="panel">
+                    <div class="panel-content">
+                        <ul>
+                            <li>Zabezpieczenia przeciwprzeciążeniowe silników</li>
+                            <li>Czujniki poziomu wody</li>
+                            <li>Zabezpieczenia przed przegrzaniem</li>
+                            <li>Systemy kontroli wycieku wody (aquastop)</li>
+                            <li>Systemy kontroli zamknięcia drzwi/pokrywy</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <button class="accordion">Urządzenia grzewcze (czajniki, żelazka, grzejniki)</button>
+                <div class="panel">
+                    <div class="panel-content">
+                        <ul>
+                            <li>Bezpieczniki termiczne</li>
+                            <li>Termostaty</li>
+                            <li>Automatyczne wyłączanie po osiągnięciu temperatury</li>
+                            <li>Wyłączniki przy przewróceniu (grzejniki)</li>
+                            <li>Automatyczne wyłączanie po czasie bezczynności (żelazka)</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <button class="accordion">Sprzęt elektroniczny (TV, komputery)</button>
+                <div class="panel">
+                    <div class="panel-content">
+                        <ul>
+                            <li>Bezpieczniki elektroniczne</li>
+                            <li>Zabezpieczenia przeciwprzepięciowe</li>
+                            <li>Filtrowanie zakłóceń z sieci</li>
+                            <li>Układy miękkiego startu</li>
+                            <li>Zabezpieczenia przed skokami napięcia</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="warning-box">
+                    <h4>Ważne!</h4>
+                    <p>Nawet najlepsze zabezpieczenia w urządzeniach nie zastąpią prawidłowo wykonanej instalacji domowej. Urządzenia powinny być używane zgodnie z instrukcją producenta i podłączane do odpowiednio zabezpieczonych gniazdek.</p>
+                </div>
+            </div>
+            
+            <div id="zagrozenia" class="tab-content">
+                <h2>Zagrożenia dla człowieka i zabezpieczenia przeciwporażeniowe</h2>
+                
+                <div class="danger-box">
+                    <p>Sieć elektryczna stanowi poważne zagrożenie dla zdrowia i życia człowieka. Porażenie prądem może prowadzić do poważnych obrażeń, a nawet śmierci.</p>
+                </div>
+                
+                <h3>Główne zagrożenia:</h3>
+                
+                <div class="flex-container">
+                    <div class="flex-item card">
+                        <h4>Bezpośredni kontakt z elementami pod napięciem</h4>
+                        <p>Dotknięcie przewodów pod napięciem, uszkodzonych urządzeń, nieizolowanych części instalacji.</p>
+                    </div>
+                    
+                    <div class="flex-item card">
+                        <h4>Pośredni kontakt z elementami pod napięciem</h4>
+                        <p>Dotknięcie metalowych obudów urządzeń, które na skutek awarii znalazły się pod napięciem.</p>
+                    </div>
+                    
+                    <div class="flex-item card">
+                        <h4>Łuk elektryczny</h4>
+                        <p>Może powodować poparzenia i uszkodzenia wzroku nawet bez bezpośredniego kontaktu z przewodami.</p>
+                    </div>
+                </div>
+                
+                <h3>Zabezpieczenia przeciwporażeniowe stosowane w sieciach:</h3>
+                
+                <button class="accordion">Ochrona podstawowa (przed dotykiem bezpośrednim)</button>
+                <div class="panel">
+                    <div class="panel-content">
+                        <ul>
+                            <li>Izolacja podstawowa przewodów i urządzeń</li>
+                            <li>Obudowy i osłony części pod napięciem</li>
+                            <li>Bariery i przeszkody fizyczne</li>
+                            <li>Umieszczanie poza zasięgiem</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <button class="accordion">Ochrona przy uszkodzeniu (przed dotykiem pośrednim)</button>
+                <div class="panel">
+                    <div class="panel-content">
+                        <ul>
+                            <li>Samoczynne wyłączenie zasilania</li>
+                            <li>Izolacja ochronna (podwójna)</li>
+                            <li>Separacja elektryczna</li>
+                            <li>Uziemienia ochronne</li>
+                            <li>Połączenia wyrównawcze</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <button class="accordion">Wyłączniki różnicowoprądowe (RCD)</button>
+                <div class="panel">
+                    <div class="panel-content">
+                        <p>Najskuteczniejsze urządzenia ochrony przeciwporażeniowej. Wykrywają prądy upływu i odcinają zasilanie w ciągu milisekund.</p>
+                        <ul>
+                            <li>RCD o wysokiej czułości (30mA) - ochrona osobista</li>
+                            <li>RCD o niższej czułości (100-300mA) - ochrona przeciwpożarowa</li>
+                        </ul>
+                        <p>Zalecane w obwodach zasilających łazienki, kuchnie, obwody zewnętrzne i inne miejsca o zwiększonym ryzyku porażenia.</p>
+                    </div>
+                </div>
+                
+                <div class="info-box">
+                    <h4>Czy wiesz, że?</h4>
+                    <p>Prąd o natężeniu zaledwie 30mA przepływający przez ciało człowieka przez 0,2 sekundy może spowodować śmiertelne porażenie. Dlatego wyłączniki różnicowoprądowe o czułości 30mA są kluczowym elementem ochrony przeciwporażeniowej w instalacjach domowych.</p>
+                </div>
+            </div>
+            
+            <div id="pierwsza-pomoc" class="tab-content">
+                <h2>Skutki zdrowotne porażenia prądem i pierwsza pomoc</h2>
+                
+                <div class="danger-box">
+                    <p>Porażenie prądem elektrycznym jest stanem bezpośredniego zagrożenia życia. Szybkie i właściwe udzielenie pomocy może uratować życie poszkodowanego.</p>
+                </div>
+                
+                <h3>Skutki zdrowotne porażenia prądem:</h3>
+                
+                <div class="flex-container">
+                    <div class="flex-item card">
+                        <h4>Skutki natychmiastowe</h4>
+                        <ul>
+                            <li>Oparzenia zewnętrzne i wewnętrzne</li>
+                            <li>Skurcze mięśni i niemożność uwolnienia się</li>
+                            <li>Zaburzenia rytmu serca, migotanie komór</li>
+                            <li>Zatrzymanie krążenia</li>
+                            <li>Zatrzymanie oddychania</li>
+                            <li>Utrata przytomności</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="flex-item card">
+                        <h4>Skutki odległe w czasie</h4>
+                        <ul>
+                            <li>Uszkodzenia narządów wewnętrznych</li>
+                            <li>Zaburzenia neurologiczne</li>
+                            <li>Zaburzenia psychiczne</li>
+                            <li>Martwica tkanek (nawet po kilku dniach)</li>
+                            <li>Zaburzenia funkcji nerek</li>
+                            <li>Problemy kardiologiczne</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <h3>Zasady udzielania pierwszej pomocy:</h3>
+                
+                <div class="warning-box">
+                    <h4>BEZPIECZEŃSTWO PRZEDE WSZYSTKIM!</h4>
+                    <p>Nigdy nie dotykaj osoby porażonej prądem, jeśli nadal ma kontakt ze źródłem prądu!</p>
+                </div>
+                
+                <ol>
+                    <li>
+                        <strong>Bezpieczeństwo ratownika:</strong>
+                        <ul>
+                            <li>Odłącz źródło prądu (wyłącz bezpiecznik, wyciągnij wtyczkę)</li>
+                            <li>Jeśli nie możesz odłączyć prądu, odsuń poszkodowanego od źródła za pomocą przedmiotu nieprzewodzącego (drewniany kij, plastikowa rura)</li>
+                            <li>Stań na suchym, izolującym podłożu (guma, drewno)</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Oceń stan poszkodowanego:</strong>
+                        <ul>
+                            <li>Sprawdź przytomność (reakcja na głos, dotyk)</li>
+                            <li>Sprawdź oddech (patrz, słuchaj, wyczuj przez 10 sekund)</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Wezwij pomoc:</strong>
+                        <ul>
+                            <li>Zadzwoń pod numer alarmowy 112 lub 999</li>
+                            <li>Poinformuj dyspozytora o porażeniu prądem</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Jeśli poszkodowany jest nieprzytomny, ale oddycha:</strong>
+                        <ul>
+                            <li>Ułóż go w pozycji bocznej ustalonej</li>
+                            <li>Kontroluj regularnie oddech</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Jeśli poszkodowany nie oddycha lub oddycha nieprawidłowo:</strong>
+                        <ul>
+                            <li>Rozpocznij resuscytację krążeniowo-oddechową (RKO)</li>
+                            <li>Wykonuj 30 uciśnięć klatki piersiowej, następnie 2 wdechy ratownicze</li>
+                            <li>Kontynuuj do przyjazdu służb ratunkowych lub powrotu prawidłowego oddechu</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Oparzenia:</strong>
+                        <ul>
+                            <li>Chłodź oparzenia zimną (nie lodowatą) wodą przez 15-20 minut</li>
+                            <li>Nie stosuj maści, kremów, czy domowych sposobów na oparzenia</li>
+                            <li>Przykryj oparzenie sterylnym opatrunkiem</li>
+                        </ul>
+                    </li>
+                </ol>
+                
+                <div class="info-box">
+                    <h4>Pamiętaj!</h4>
+                    <p>Każda osoba porażona prądem powinna zostać zbadana przez lekarza, nawet jeśli nie ma widocznych obrażeń. Niektóre skutki porażenia mogą ujawnić się dopiero po pewnym czasie.</p>
+                </div>
             </div>
         </div>
-    </div>
+    </main>
+    <footer>
+        <div class="container">
+            Prezentacja Patryka Jankowiaka z 2TI :)<br>
+            <p>(dawid ślęzak i filip niedzielski też są w grupie)</p>
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>

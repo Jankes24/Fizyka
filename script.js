@@ -1,67 +1,39 @@
-let currentIndex = 0;
-const slides = document.querySelectorAll("#slides .slide");
-const arrows = document.getElementsByClassName("arrow");
-const indexHolder = document.getElementById("index");
-
-window.onload = function() {
-    if (currentIndex === slides.length - 1)
-        {
-            arrows[1].classList.remove("enabled");
-        }
-        else{
-            arrows[1].classList.add("enabled");
-        }
-        if (currentIndex === 0)
-        {
-            arrows[0].classList.remove("enabled");
-        }
-        else{
-            arrows[0].classList.add("enabled");
-        }
-        indexHolder.innerHTML = (currentIndex + 1).toString() + "/" + slides.length;       
-};
-
-function MoveSlides(dir)
-{
-    if (dir === 1) {
-        currentIndex = Math.min(currentIndex + 1, slides.length - 1);
-    } 
-    else if (dir === -1) {
-        currentIndex = Math.max(currentIndex - 1, 0);
+function OpenTab(evt, tabName) {
+    var tabContent = document.getElementsByClassName("tab-content");
+    for (var i = 0; i < tabContent.length; i++) {
+        tabContent[i].classList.remove("active");
     }
-    const offset = -currentIndex * 100;
-    slides.forEach((slide) => {
-        slide.style.transform = `translateX(${offset}%)`;
-    });
-    if (currentIndex === slides.length - 1)
-    {
-        arrows[1].classList.add("disabled");
-        arrows[1].classList.remove("enabled");
+    
+    var tabLinks = document.getElementsByClassName("tab");
+    for (var i = 0; i < tabLinks.length; i++) {
+        tabLinks[i].classList.remove("active");
     }
-    else{
-        arrows[1].classList.remove("disabled");
-        arrows[1].classList.add("enabled");
-    }
-    if (currentIndex === 0)
-        {
-            arrows[0].classList.add("disabled");
-            arrows[0].classList.remove("enabled");
+    
+    document.getElementById(tabName).classList.add("active");
+    evt.currentTarget.classList.add("active");
+    
+    var activeTabAccordions = document.getElementById(tabName).querySelectorAll(".accordion");
+    for (var i = 0; i < activeTabAccordions.length; i++) {
+        if (activeTabAccordions[i].classList.contains("active")) {
+            var panel = activeTabAccordions[i].nextElementSibling;
+            panel.style.maxHeight = panel.scrollHeight + "px";
         }
-        else{
-        arrows[0].classList.remove("disabled");
-        arrows[0].classList.add("enabled");
     }
-    indexHolder.innerHTML = (currentIndex + 1).toString() + "/" + slides.length;
 }
 
-document.addEventListener("keydown", function(event) {
-    switch (event.key) {
-        case "ArrowLeft":
-            MoveSlides(-1);
-            break;
-        case "ArrowRight":
-        case " ":
-            MoveSlides(1);
-            break;
+document.addEventListener("DOMContentLoaded", function() {
+    var acc = document.getElementsByClassName("accordion");
+    for (var i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        });
     }
+    
+    document.querySelector(".tab.active").click();
 });
